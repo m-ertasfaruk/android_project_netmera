@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidprojectnetmera">
+
+    <application
+
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Androidprojectnetmera">
+        <activity android:name=".MainActivity"  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data android:scheme="http"
+                    android:host="www.google.com" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.netmera.push.intent.REGISTER"/>
+                <action android:name="com.netmera.push.intent.RECEIVE"/>
+                <action android:name="com.netmera.push.intent.OPEN"/>
+                <action android:name="com.netmera.push.intent.DISMISS"/>
+                <action android:name="com.netmera.push.intent.BUTTON"/>
+                //If you want to use carousel push notifications, you should add the
+                following actions.
+                <action android:name="com.netmera.push.intent.carousel.OPEN"/>
+                <action android:name="com.netmera.push.intent.carousel.PREV"/>
+                <action android:name="com.netmera.push.intent.carousel.NEXT"/>
+                <action android:name="com.netmera.push.intent.carousel.ITEM"/>
+
+            </intent-filter>
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+</manifest>

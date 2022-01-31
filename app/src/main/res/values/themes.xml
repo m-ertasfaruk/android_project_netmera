@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Androidprojectnetmera" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        name="NetmeraInAppMessageStyle">
+        //in-app message view width in ratio
+        <item name="inAppMessageWidth">@integer/netmera_default_vertical_width</item>
+        //in-app message view height in ratio
+        <item name="inAppMessageHeight">@integer/netmera_default_vertical_height</item>
+        //in-app message view weight in ratio
+        <item name="inAppMessageWeight">@integer/netmera_default_vertical_weight</item>
+        //in-app message view backgroundcolor
+        <item name="inAppMessageBackground">@drawable/netmera_bg_in_app_message</item>
+        //in-app message view cancel button image
+        <item name="inAppMessageCancelButtonDrawable">@drawable/netmera_ic_action_cancel</item>
+        //in-app message view title size
+        <item name="inAppMessageTitleSize">@dimen/netmera_text_default_size</item>
+        //in-app message view title color
+
+        //in-app message view text size
+        <item name="inAppMessageTextSize">@dimen/netmera_text_default_size</item>
+        //in-app message view text color
+
+        //in-app message view title and text fontPath
+        <item name="inAppMessageFontPath">/assets/fonts/*.ttf</item>
+    </style>
+</resources>

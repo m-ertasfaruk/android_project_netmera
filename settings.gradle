@@ -1,0 +1,2 @@
+rootProject.name = "androidprojectnetmera"
+include ':app'
